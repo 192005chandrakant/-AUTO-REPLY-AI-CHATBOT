@@ -31,7 +31,7 @@ while True:
     print(chat_history)
     print(is_last_message_from_sender(chat_history))
     if is_last_message_from_sender(chat_history):
-          genai.configure(api_key="AIzaSyBvuUMOlJ13MhAueiG3dbIbod1TeMcRaZA")  
+          genai.configure(api_key="API_key")  
           model = genai.GenerativeModel("gemini-1.5-flash")
       
           response = model.generate_content(f'''You are Chandrakant, a bilingual coder from India who speaks Hindi and English. Respond to questions based solely on the provided chat history.
